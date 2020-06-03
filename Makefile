@@ -6,8 +6,8 @@ LIBSRC=MapReduceFramework.cpp
 LIBOBJ=$(LIBSRC:.cpp=.o)
 
 INCS=-I.
-CFLAGS = -Wall -std=c++11 -pthread -fpermissive  -g $(INCS)
-CXXFLAGS = -Wall -std=c++11 -pthread -fpermissive  -g $(INCS)
+CFLAGS = -Wall -C -std=c++11 -pthread -fpermissive  -g $(INCS)
+CXXFLAGS = -Wall -C -std=c++11 -pthread -fpermissive  -g $(INCS)
 
 OSMLIB = libMapReduceFramework.a
 TARGETS = $(OSMLIB)
