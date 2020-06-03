@@ -1,0 +1,3 @@
+/home/alon/Documents/studies/Computer science/OS/ex3s/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alon/Documents/studies/Computer science/OS/ex3s/cmake-build-debug/CMakeFiles/ex3s.dir
+/home/alon/Documents/studies/Computer science/OS/ex3s/cmake-build-debug/CMakeFiles/edit_cache.dir

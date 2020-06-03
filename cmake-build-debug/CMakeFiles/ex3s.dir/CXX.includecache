@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alon/Documents/studies/Computer science/OS/ex3s/MapReduceClient.h
+vector
+-
+map
+-
+utility
+-
+
+/home/alon/Documents/studies/Computer science/OS/ex3s/MapReduceFramework.cpp
+MapReduceClient.h
+/home/alon/Documents/studies/Computer science/OS/ex3s/MapReduceClient.h
+MapReduceFramework.h
+/home/alon/Documents/studies/Computer science/OS/ex3s/MapReduceFramework.h
+iostream
+-
+vector
+-
+pthread.h
+-
+atomic
+-
+set
+-
+
+/home/alon/Documents/studies/Computer science/OS/ex3s/MapReduceFramework.h
+MapReduceClient.h
+/home/alon/Documents/studies/Computer science/OS/ex3s/MapReduceClient.h
+
