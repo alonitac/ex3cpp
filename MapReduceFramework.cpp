@@ -198,7 +198,7 @@ void* shuffleThreadFunc(void *jobContext){
                     exit(1);
                 }
 
-                std::pair<K2*, V2*>* el = &tc.mapOutput[offsets[tc.threadID]];
+                std::pair<K2*, V2*>* el = &tc.mapOutput.at(offsets.at(tc.threadID));
 
                 if (pthread_mutex_unlock(&tc.mapOutputMutex) != 0){
                     std::cerr << "system error: error on pthread_mutex_unlock" << std::endl;
@@ -207,7 +207,7 @@ void* shuffleThreadFunc(void *jobContext){
 
                 auto res = jc->uniqueKeys.insert(el->first);
                 if (!res.second){
-                    jc->intermediateMap[*res.first].push_back(el->second);
+                    jc->intermediateMap.at(*res.first).push_back(el->second);
 
                 } else {
                     jc->intermediateMap[el->first] = std::vector<V2*>();
